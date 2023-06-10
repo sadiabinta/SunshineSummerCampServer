@@ -1,0 +1,113 @@
+ [
+      {
+        "_id": "60c72e2686bc4f001f9b3e08" ,
+        "instructorName": "John Smith",
+        "image": "john-smith.jpg",
+        "instructorEmail": "john@example.com",
+        "className": "Guitar Fundamentals",
+        "classNumber": 1,
+        "qualification": "Certified Guitarist",
+        "bio": "John Smith is a highly experienced guitarist...",
+        "category": "Instrumental"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e09" ,
+        "instructorName": "Alice Johnson",
+        "image": "alice-johnson.jpg",
+        "instructorEmail": "alice@example.com",
+        "className": "Piano for Beginners",
+        "classNumber": 2,
+        "qualification": "Piano Virtuoso",
+        "bio": "Alice Johnson has been playing the piano...",
+        "category": "Instrumental"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e10",
+        "instructorName": "Sarah Thompson",
+        "image": "sarah-thompson.jpg",
+        "instructorEmail": "sarah@example.com",
+        "className": "Vocal Training",
+        "classNumber": 3,
+        "qualification": "Professional Vocalist",
+        "bio": "Sarah Thompson is a renowned vocalist...",
+        "category": "Vocal"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e11",
+        "instructorName": "Michael Davis",
+        "image": "michael-davis.jpg",
+        "instructorEmail": "michael@example.com",
+        "className": "Drums Workshop",
+        "classNumber": 4,
+        "qualification": "Drumming Specialist",
+        "bio": "Michael Davis is a skilled drummer...",
+        "category": "Instrumental"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e12" ,
+        "instructorName": "Emily Wilson",
+        "image": "emily-wilson.jpg",
+        "instructorEmail": "emily@example.com",
+        "className": "Songwriting and Composition",
+        "classNumber": 5,
+        "qualification": "Professional Songwriter",
+        "bio": "Emily Wilson is an accomplished songwriter...",
+        "category": "Creative"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e13" ,
+        "instructorName": "Daniel Brown",
+        "image": "daniel-brown.jpg",
+        "instructorEmail": "daniel@example.com",
+        "className": "Music Theory",
+        "classNumber": 6,
+        "qualification": "Music Theorist",
+        "bio": "Daniel Brown is a renowned music theorist...",
+        "category": "Theory"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e14" ,
+        "instructorName": "Olivia Thompson",
+        "image": "olivia-thompson.jpg",
+        "instructorEmail": "olivia@example.com",
+        "className": "Bass Guitar Techniques",
+        "classNumber": 7,
+        "qualification": "Expert Bassist",
+        "bio": "Olivia Thompson is an accomplished bass guitarist...",
+        "category": "Instrumental"
+      },
+      {
+        "_id":"60c72e2686bc4f001f9b3e15" ,
+        "instructorName": "David Johnson",
+        "image": "david-johnson.jpg",
+        "instructorEmail": "david@example.com",
+        "className": "Music Production",
+        "classNumber": 8,
+        "qualification": "Music Producer",
+        "bio": "David Johnson is a seasoned music producer...",
+        "category": "Technical"
+      },
+      {
+        "_id": "60c72e2686bc4f001f9b3e16" ,
+        "instructorName": "Sophia Davis",
+        "image": "sophia-davis.jpg",
+        "instructorEmail": "sophia@example.com",
+        "className": "Jazz Improvisation",
+        "classNumber": 9,
+        "qualification": "Jazz Pianist",
+        "bio": "Sophia Davis is a skilled jazz pianist...",
+        "category": "Instrumental"
+      },
+      {
+        "_id":  "60c72e2686bc4f001f9b3e17" ,
+        "instructorName": "Michael Wilson",
+        "image": "michael-wilson.jpg",
+        "instructorEmail": "michael@example.com",
+        "className": "Music History",
+        "classNumber": 10,
+        "qualification": "Music Historian",
+        "bio": "Michael Wilson is an expert in music history...",
+        "category": "Theory"
+      }
+    ]
+  
