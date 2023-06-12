@@ -29,12 +29,25 @@ async function run() {
     const classCollection=client.db("summerSchoolDb").collection("class");
     const instructorCollection=client.db("summerSchoolDb").collection("instructor");
     const cartCollection=client.db("summerSchoolDb").collection("cart");
+    const userCollection=client.db("summerSchoolDb").collection("users");
 
+    //user
+    app.post('/users',async(req,res)=>{
+      const user=req.body;
+      const query={email:user.email};
+      const existingUser=await userCollection.findOne(query);
+      if(existingUser){
+        return res.send({message:'User Already exist'})
+      }
+      const result=await userCollection.insertOne(user);
+      res.send(result);
+    })
+//class
     app.get('/classes',async(req,res)=>{
       const result=await classCollection.find().toArray();
       res.send(result);
     })
-
+//instructor
     app.get('/instructors',async(req,res)=>{
       const result=await instructorCollection.find().toArray();
       res.send(result);
