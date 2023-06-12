@@ -1,103 +1,102 @@
- [
-      {
-        "className": "Guitar Fundamentals",
-        "classImage": "guitar.jpg",
-        "instructorName": "John Smith",
-        "instructorEmail": "john@example.com",
-        "availableSeats": 15,
-        "price": 50,
-        "status": "Open",
-        "category": "Instrumental"
-      },
-      {
-        "className": "Piano for Beginners",
-        "classImage": "piano.jpg",
-        "instructorName": "Alice Johnson",
-        "instructorEmail": "alice@example.com",
-        "availableSeats": 12,
-        "price": 60,
-        "status": "Open",
-        "category": "Instrumental"
-      },
-      {
-        "className": "Vocal Training",
-        "classImage": "vocal.jpg",
-        "instructorName": "Sarah Thompson",
-        "instructorEmail": "sarah@example.com",
-        "availableSeats": 10,
-        "price": 70,
-        "status": "Open",
-        "category": "Vocal"
-      },
-      {
-        "className": "Drums Workshop",
-        "classImage": "drums.jpg",
-        "instructorName": "Michael Davis",
-        "instructorEmail": "michael@example.com",
-        "availableSeats": 8,
-        "price": 80,
-        "status": "Open",
-        "category": "Instrumental"
-      },
-      {
-        "className": "Songwriting and Composition",
-        "classImage": "songwriting.jpg",
-        "instructorName": "Emily Wilson",
-        "instructorEmail": "emily@example.com",
-        "availableSeats": 15,
-        "price": 90,
-        "status": "Open",
-        "category": "Creative"
-      },
-      {
-        "className": "Music Theory",
-        "classImage": "music-theory.jpg",
-        "instructorName": "Daniel Brown",
-        "instructorEmail": "daniel@example.com",
-        "availableSeats": 20,
-        "price": 70,
-        "status": "Open",
-        "category": "Theory"
-      },
-      {
-        "className": "Bass Guitar Techniques",
-        "classImage": "bass-guitar.jpg",
-        "instructorName": "Olivia Thompson",
-        "instructorEmail": "olivia@example.com",
-        "availableSeats": 10,
-        "price": 80,
-        "status": "Open",
-        "category": "Instrumental"
-      },
-      {
-        "className": "Music Production",
-        "classImage": "music-production.jpg",
-        "instructorName": "David Johnson",
-        "instructorEmail": "david@example.com",
-        "availableSeats": 12,
-        "price": 100,
-        "status": "Open",
-        "category": "Technical"
-      },
-      {
-        "className": "Jazz Improvisation",
-        "classImage": "jazz-improvisation.jpg",
-        "instructorName": "Sophia Davis",
-        "instructorEmail": "sophia@example.com",
-        "availableSeats": 15,
-        "price": 90,
-        "status": "Open",
-        "category": "Instrumental"
-      },
-      {
-        "className": "Music History",
-        "classImage": "music-history.jpg",
-        "instructorName": "Michael Wilson",
-        "instructorEmail": "michael@example.com",
-        "availableSeats": 20,
-        "price": 60,
-        "status": "Open",
-        "category": "Theory"
-      }
-    ]
-  
+[
+  {
+    "className": "Guitar Fundamentals",
+    "classImage": "https://i.imgur.com/xceS0Hs.jpg",
+    "instructorName": "John Smith",
+    "instructorEmail": "john@example.com",
+    "availableSeats": "15",
+    "price": "50",
+    "status": "Open",
+    "category": "Instrumental"
+  },
+  {
+    "className": "Piano for Beginners",
+    "classImage": "piano.jpg",
+    "instructorName": "Alice Johnson",
+    "instructorEmail": "alice@example.com",
+    "availableSeats": 12,
+    "price": "60",
+    "status": "Open",
+    "category": "Instrumental"
+  },
+  {
+    "className": "Vocal Training",
+    "classImage": "https://i.imgur.com/A6IElYS.jpg",
+    "instructorName": "Sarah Thompson",
+    "instructorEmail": "sarah@example.com",
+    "availableSeats": "10",
+    "price": "70",
+    "status": "Open",
+    "category": "Vocal"
+  },
+  {
+    "className": "Drums Workshop",
+    "classImage": "https://i.imgur.com/8NFZ6wE.jpg",
+    "instructorName": "Michael Davis",
+    "instructorEmail": "michael@example.com",
+    "availableSeats": "8",
+    "price": "80",
+    "status": "Open",
+    "category": "Instrumental"
+  },
+  {
+    "className": "Songwriting and Composition",
+    "classImage": "https://i.imgur.com/gdUE19j.jpg",
+    "instructorName": "Emily Wilson",
+    "instructorEmail": "emily@example.com",
+    "availableSeats": "15",
+    "price": "90",
+    "status": "Open",
+    "category": "Creative"
+  },
+  {
+    "className": "Violin Mastery",
+    "classImage": "https://i.imgur.com/nlljgHp.jpg",
+    "instructorName": "Emily Wilson",
+    "instructorEmail": "emily@example.com",
+    "availableSeats": "8",
+    "price": "100",
+    "status": "Open",
+    "category": "Instrumental"
+  },
+  {
+    "className": "Bass Guitar Techniques",
+    "classImage": "https://i.imgur.com/q5hxSPk.jpg",
+    "instructorName": "Olivia Thompson",
+    "instructorEmail": "olivia@example.com",
+    "availableSeats": "10",
+    "price": "80",
+    "status": "Open",
+    "category": "Instrumental"
+  },
+  {
+    "className": "Music Production",
+    "classImage": "https://i.imgur.com/rqTGd6x.jpg",
+    "instructorName": "David Johnson",
+    "instructorEmail": "david@example.com",
+    "availableSeats": "12",
+    "price": "100",
+    "status": "Open",
+    "category": "Technical"
+  },
+  {
+    "className": "Music Adventures for Kids",
+    "classImage": "https://i.imgur.com/uNuDKbK.jpg",
+    "instructorName": "Emily Johnson",
+    "instructorEmail": "emily@example.com",
+    "availableSeats": "20",
+    "price": "50",
+    "status": "Open",
+    "category": "Kids"
+  },
+  {
+    "className": "Exploring Musical Instruments",
+    "classImage": "https://i.imgur.com/CI6rron.jpg",
+    "instructorName": "Sarah Thompson",
+    "instructorEmail": "sarah@example.com",
+    "availableSeats": "15",
+    "price": "60",
+    "status": "Open",
+    "category": "Instrumental"
+  }
+]

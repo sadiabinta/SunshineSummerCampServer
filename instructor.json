@@ -2,7 +2,7 @@
       {
         "_id": "60c72e2686bc4f001f9b3e08" ,
         "instructorName": "John Smith",
-        "image": "john-smith.jpg",
+        "image": "https://i.ibb.co/PFNKZ6q/person1.webp",
         "instructorEmail": "john@example.com",
         "className": "Guitar Fundamentals",
         "classNumber": 1,
@@ -13,7 +13,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e09" ,
         "instructorName": "Alice Johnson",
-        "image": "alice-johnson.jpg",
+        "image": "https://i.ibb.co/JsCFMmq/person2.jpg",
         "instructorEmail": "alice@example.com",
         "className": "Piano for Beginners",
         "classNumber": 2,
@@ -24,7 +24,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e10",
         "instructorName": "Sarah Thompson",
-        "image": "sarah-thompson.jpg",
+        "image": "https://i.ibb.co/MsQXyJM/person3.webp",
         "instructorEmail": "sarah@example.com",
         "className": "Vocal Training",
         "classNumber": 3,
@@ -35,7 +35,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e11",
         "instructorName": "Michael Davis",
-        "image": "michael-davis.jpg",
+        "image": "https://i.ibb.co/Bg4L5SB/person4.webp",
         "instructorEmail": "michael@example.com",
         "className": "Drums Workshop",
         "classNumber": 4,
@@ -46,7 +46,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e12" ,
         "instructorName": "Emily Wilson",
-        "image": "emily-wilson.jpg",
+        "image": "https://i.ibb.co/hFJd1cz/person5.webp",
         "instructorEmail": "emily@example.com",
         "className": "Songwriting and Composition",
         "classNumber": 5,
@@ -57,7 +57,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e13" ,
         "instructorName": "Daniel Brown",
-        "image": "daniel-brown.jpg",
+        "image": "https://i.ibb.co/W2Wp4m3/person7.png",
         "instructorEmail": "daniel@example.com",
         "className": "Music Theory",
         "classNumber": 6,
@@ -68,7 +68,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e14" ,
         "instructorName": "Olivia Thompson",
-        "image": "olivia-thompson.jpg",
+        "image": "https://i.ibb.co/W2Wp4m3/person7.png",
         "instructorEmail": "olivia@example.com",
         "className": "Bass Guitar Techniques",
         "classNumber": 7,
@@ -79,7 +79,7 @@
       {
         "_id":"60c72e2686bc4f001f9b3e15" ,
         "instructorName": "David Johnson",
-        "image": "david-johnson.jpg",
+        "image": "https://i.ibb.co/zVrL853/person8.webp",
         "instructorEmail": "david@example.com",
         "className": "Music Production",
         "classNumber": 8,
@@ -90,7 +90,7 @@
       {
         "_id": "60c72e2686bc4f001f9b3e16" ,
         "instructorName": "Sophia Davis",
-        "image": "sophia-davis.jpg",
+        "image": "https://i.ibb.co/Dr3wrhY/person9.webp",
         "instructorEmail": "sophia@example.com",
         "className": "Jazz Improvisation",
         "classNumber": 9,
@@ -101,7 +101,7 @@
       {
         "_id":  "60c72e2686bc4f001f9b3e17" ,
         "instructorName": "Michael Wilson",
-        "image": "michael-wilson.jpg",
+        "image": "https://i.ibb.co/MsQXyJM/person3.webp",
         "instructorEmail": "michael@example.com",
         "className": "Music History",
         "classNumber": 10,
