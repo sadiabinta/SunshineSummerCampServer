@@ -11,6 +11,7 @@ app.use(express.json());
 
 const verifyJWT = (req, res, next) => {
   const authorization = req.headers.authorization;
+  console.log('hit hit')
   if (!authorization) {
     return res.status(401).send({ error: true, message: 'unauthorized Access' });
   }
@@ -50,13 +51,15 @@ async function run() {
 
     app.post('/jwt', (req, res) => {
       const user = req.body;
+      console.log(user);
       const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' })
       res.send({ token });
     })
 
 
     //user
-    app.get('/users', async (req, res) => {
+    app.get('/users',verifyJWT, async (req, res) => {
+
       const result = await userCollection.find().toArray();
       res.send(result);
     })
@@ -71,8 +74,9 @@ async function run() {
       res.send(result);
     });
 
-    app.get('/users/admin/:email'),async (req, res) => {
+    app.get('/users/admin/:email'), async (req, res) => {
       const email = req.params.email;
+      console.log(req.headers)
 
       if(req.decoded.email!== email){
         res.send({admin:false})
@@ -82,7 +86,7 @@ async function run() {
       const result={admin:user?.role=== 'admin'}
       res.send(result);
     }
-    app.patch('/users/admin/:id', verifyJWT, async (req, res) => {
+    app.patch('/users/admin/:id', async (req, res) => {
       const id = req.params.id;
       const filter = { _id: new ObjectId(id) };
       const updateDoc = {
@@ -106,16 +110,11 @@ async function run() {
     })
 
     //cart
-    app.get('/carts', verifyJWT, async (req, res) => {
+    app.get('/carts', async (req, res) => {
       const email = req.query.email;
       if (!email) {
         res.send([]);
       }
-      const decodedEmail=req.decoded.email;
-      if(email !==decodedEmail){
-        return res.status(401).send({error:true,message:'forbidden Access'})
-      }
-
       const query = { email: email };
       const result = await cartCollection.find(query).toArray();
       res.send(result);
