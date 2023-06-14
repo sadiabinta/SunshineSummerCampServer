@@ -11,7 +11,6 @@ app.use(express.json());
 
 const verifyJWT = (req, res, next) => {
   const authorization = req.headers.authorization;
-  console.log('hit hit')
   if (!authorization) {
     return res.status(401).send({ error: true, message: 'unauthorized Access' });
   }
@@ -52,16 +51,34 @@ async function run() {
     app.post('/jwt', (req, res) => {
       const user = req.body;
       console.log(user);
-      const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '1h' })
+      const token = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '7d' })
       res.send({ token });
     })
 
 
     //user
-    app.get('/users',verifyJWT, async (req, res) => {
+    app.get('/users', async (req, res) => {
 
       const result = await userCollection.find().toArray();
       res.send(result);
+    })
+    app.get('/users/:email', verifyJWT, async (req, res) => {
+      const email = req.params.email;
+      if(req.decoded.email!== email){
+        res.send({admin:false})
+      }
+      const query={email:email}
+      const user=await userCollection.findOne(query);
+      if(user?.role === 'admin'){
+        return res.send({role:'admin'})
+      }
+      if(user?.role === 'instructor'){
+        return res.send({role:'instructor'})
+      }
+      res.send({role:'student'})
+      //const result={admin:user?.role === 'admin' || {instructor:user?.role}==='instructor'}
+      //const result = await userCollection.find().toArray();
+      //res.send(result);
     })
     app.post('/users', async (req, res) => {
       const user = req.body;
@@ -74,16 +91,17 @@ async function run() {
       res.send(result);
     });
 
-    app.get('/users/admin/:email'), async (req, res) => {
+    app.get('/users/admin/:email'), verifyJWT, async (req, res) => {
       const email = req.params.email;
-      console.log(req.headers)
+      console.log('hitted')
 
       if(req.decoded.email!== email){
         res.send({admin:false})
       }
       const query={email:email}
       const user=await userCollection.findOne(query);
-      const result={admin:user?.role=== 'admin'}
+      const result={admin:user?.role === 'admin'}
+      console.log(result);
       res.send(result);
     }
     app.patch('/users/admin/:id', async (req, res) => {
@@ -92,6 +110,17 @@ async function run() {
       const updateDoc = {
         $set: {
           role: 'admin'
+        },
+      };
+      const result = await userCollection.updateOne(filter, updateDoc);
+      res.send(result);
+    })
+    app.patch('/users/instructor/:id', async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id) };
+      const updateDoc = {
+        $set: {
+          role: 'instructor'
         },
       };
       const result = await userCollection.updateOne(filter, updateDoc);
